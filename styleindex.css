@@ -1,0 +1,247 @@
+@charset "utf-8";
+* {
+margin : 0;
+padding : 0;
+}
+/*styling the basic elements of the whole page*/
+html{
+	background: #FFFFFF;
+    height:100%;
+    margin:0px;
+}
+/*defining properties of the body part of our webpage*/
+body{
+	background-color: #eee;  	/* Changing the backgroung color */
+	font-family: Garamond;
+	margin-left:13%;
+	margin-right:13%;
+	margin-top:0px;
+	margin-bottom: 0px;
+	
+}
+/*Making the first letter of our paragraph bigger */
+#indent::first-letter{
+    font-size: 200%;
+    color: black; 
+    text-indent:50px;
+}
+/*Creating indentation of paragraph*/
+[id^="indent"]{
+    text-indent: 50px;
+}
+/*Setting the position of search box*/
+#search{
+    float:right;
+    margin:4px 10px;
+}
+
+/*Styling position of telephone number in the heading*/
+#phone{
+    float: right;
+    font-size: 21px;
+}
+/*Defining the color and size of the heading 2*/
+h2{
+    color: black;
+    font-size:25px;
+}
+/*Styling the box in the header */
+#headershadow{
+	text-shadow: 2px 2px 5px yellow;
+	position: relative;
+	bottom: 15px;
+	font-size: 26px;
+}
+	
+/*Styling the properties for ordered list elements */	
+ol{
+    display:inline-block;
+    text-decoration:none;
+    text-align:left;
+    color: black;
+font-size:18px;
+
+}
+/*Defining the properties for logo */
+.logo{
+	width:100px;
+	height:100px;
+	padding:3px;
+}
+/* Styling the navigation bar */
+.nav-bar{
+    position:relative;
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+    overflow: hidden;
+    border:1px solid black;
+    background-color: #333333;
+    
+}
+/* Defining properties for links used in the navigation bar */
+.nav-bar li a{display: block;
+    color: white;
+    padding:8px 10px;
+    width:142px;
+    text-decoration:none;
+    cursor: pointer;
+    font-size:18px;
+    text-align: center;
+    display: inline; /* Horizontal navigation bar. Same as when you use floating element to left */
+    float:left;
+    border-right:1px solid #bbb;
+}
+.nav-bar li:last-child{
+    border-right:none;
+}
+
+.nav-bar li a.active{
+    background-color:green;
+    color:white;}
+
+.nav-bar li a:hover:not(.active){
+    background-color:#555;
+    color: white;
+    border-radius: 12px;
+}
+
+/* properties used for table */
+table, th, td{
+    border:1px solid black;
+    width:50%;
+}
+/* table heading */
+th{
+	background-color: lightsteelblue;
+}
+
+/* Defining image class properties */
+.image{
+    width:625px;
+    height:400px;
+    float:left;
+    margin-bottom:3px;
+    margin-right:9px;
+}
+
+#bimg{
+    width:100%;
+    height:350px;
+    margin-top:10px;
+}
+/* header section */
+div.header{
+    background: url(header.jpg);
+    border:1px solid black;
+    margin-top:0px;
+}
+
+div.transbox{
+    position:relative;
+    margin:10px;
+    height: 125px;
+    background-color:#ffffff;
+    border:1px solid black;
+    opacity:0.6;
+}
+div.transbox h1{
+    margin:3%;
+    font-weight:bold;
+    color:#000000;
+} 
+ 
+/* Container of the body part */
+#container{
+    margin: 20px 15px;
+    font-size:20px;
+    text-align: left;
+}
+/* Unordered list for quick links */
+#links {
+	list-style-type: circle;
+    display:block;
+        
+}
+#links li{
+    text-align:left;
+    margin-left:20px;
+    
+}
+#links li a{
+    color:black;
+    text-decoration: underline;
+    
+}
+#links li a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+#links li a:active{
+    color: white;
+}
+/* Floating the test from the right */
+.right{
+	border:1px solid black;
+	float:right;
+	text-align:left;
+	width:316px;
+	margin-bottom:3px;
+}
+.right h2{
+	border-bottom: 1px solid black;
+    background-color: lightsteelblue;
+}
+/* Styling box section to start from the right */
+.box{
+	line-height: 28px;
+	padding: 3px;
+	
+}
+#facilities {
+	list-style-type: circle;
+	margin: 2px; 
+	margin-left: 20px;
+	font-size:20px;
+}
+/* Styling the columns */
+.columns{
+    column-count: 3;
+    column-gap: 30px;
+    column-rule:4px outset #000000;
+}
+/* Styling the social media logo */
+.fblogo{
+    margin:3px 370px;
+    display:inline-block;
+}
+.fblogo img{
+    width:50px;
+	height:50px;
+    padding:5px;
+}
+
+#scl{
+    margin-left: 312px;
+}
+/* Styling footer */
+footer {
+       background: darkgray;
+       width: 100%;
+       overflow: hidden;
+       
+   }
+footer p, footer h3{
+       color: black;
+}
+/* Defining a block at the end of the page */
+.section{
+    width:100%;
+    border:1px solid darkgray;
+    float:left;
+    background-color:darkgray;
+    
+}
+.section #center{
+    margin:3px 310px;
+}

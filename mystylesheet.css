@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+/* default styles for document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/*styles for the body of the page*/
+/* setting margins on both left-right*/
+html{
+	background:white;
+    height:100%;
+    margin:0px;
+}
+body {
+	background-color: #eee;
+	color:black;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:14%;
+	margin-right:14%;
+	font-family: Garamond;
+
+}
+/*Styling the paragraph elements accross the content*/
+p{
+    color: black;
+    font-size:20px;
+    font-family:Garamond;
+}
+pre{
+	font-family:Garamond;
+	font-size: 20px;
+}
+h1{
+text-shadow:none; 
+}
+h1:last-child{
+    text-shadow:2px 2px 5px white;
+}
+/* Defining the header */
+h2{
+color: black;
+font-family: Garamond;}
+/* Styling the header */
+div.header{
+	background:url(headerBackground.jpg) repeat;
+	text-align: left;
+	height:157px;
+	padding:0px;
+}
+/* Styling marquee to move the text */
+marquee{
+	margin-top: -10px;
+}
+#headershadow{
+	text-shadow: 2px 2px 5px yellow;
+	/*position: relative;*/
+	/*bottom: 10px;*/
+	font-size: 26px;
+}
+
+/* Styling the table for the prices */
+table, th, td{
+    border:1px solid black;
+    width:50%;
+    font-size: 20px;
+    }
+table{
+    margin:0px 172px;
+}
+th{
+	background-color: lightsteelblue;
+}
+
+/* Anchors and list */
+.nav-bar{
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+    overflow: hidden;
+    border:1px solid black;
+    background-color: #333333;
+}
+
+li a{display: block;
+color: white;
+    padding:8px 10px;
+    width:138px;
+    text-decoration:none;
+    cursor: pointer;
+    font-size:18px;
+    text-align: center;
+    display: inline; /* Horizontal navigation bar. Same as when you use floating element to left */
+    float:left;
+    border-right:1px solid #bbb;
+}
+li:last-child{
+    border-right:none;
+}
+
+li a.active{
+    background-color:green;
+    color:white;}
+
+ul li a:hover:not(.active){
+    background-color:#555;
+    color: white;
+    border-radius: 12px;
+}
+/* Fieldset styling */
+fieldset{
+    width:400px; 
+    height:200px; 
+    padding:10px; 
+    margin:5px; 
+    float:left;
+}
+/* Creating the class content for body */
+.content{
+	margin:15px 10px;
+	padding:10px 5px;
+	float:left;
+	font-family: Garamond;
+}
+.sites{
+	position:relative;
+    margin: 10px 10px;
+    padding: 0px;
+    text-align: left;
+    clear:both;
+
+	}
+.bottomright {
+   position: absolute;
+    bottom: 110px;
+    right: 635px;
+    font-size: 18px;
+    color:white;
+}
+caption{
+	float:left;
+	font-size: 15px;
+}
+/* Defining properties for Gallery */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 453px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    background-color:lightslategray;
+}
+/* Styling the images used in the gallery block. NB: when using height:auto, images overlap */
+div.gallery img {
+    width: 100%;
+    height: 50%;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+div.special{
+	position:absolute;
+	top:50px;
+	right:40px;
+}
+/* logo */
+.logo{
+	width:100px;
+	height:100px;
+	padding:3px;
+	opacity:0.8;
+}
+/* Styling the image */
+.cafeimg{
+	width:453px;
+	height:300px;
+	padding:7px;
+}
+#facilities{
+	list-style-type: circle;
+	margin: 2px; 
+	margin-left: 20px;
+	font-size:20px;
+}
+#facilities li{
+    margin-left:20px;
+    }
+/* Animating pictures on the facilities page */
+#forfacilities{
+     width: 700px;
+    height: 400px;
+    position:relative;
+    background-image: url(piment-out.jpg);
+    /*
+    animation: facilitiespic 15s infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-direction:alternate; */
+    /* Defining multiple animation properties and values with a single line */
+    animation: facilitiespic 30s linear 3s infinite alternate;
+    
+}
+
+
+/* Standard syntax */
+@keyframes facilitiespic {
+    0%   {background-image:url(piment-out.jpg);}
+    25%  {background-image:url(le-lotus.jpg); }
+    50%  {background-image:url(hotel-piment.jpg);}
+    75%  {background-image:url(double-room.jpg);}
+    100% {background-image:url(hotel-piment-out.jpg);}
+}
+
+    
+.bimg{
+	width:600px;
+	height:400px;
+}
+/* Animating the images */
+#animated {
+    width: 700px;
+    height: 400px;
+    position:relative;
+    background-image: url(Samosa.jpg);
+    animation: animatedpic 20s linear 3s infinite alternate;
+}
+
+
+/* Standard syntax */
+@keyframes animatedpic {
+    0%   {background-image:url(Samosa.jpg);}
+    25%  {background-image:url(Banana-tarts.jpg);}
+    50%  {background-image:url(breakfast-meal.jpg);}
+    75%  {background-image:url(Panini.jpg);}
+    100% {background-image:url(chicken_burger.jpg);}
+}
+#scl{
+    margin-left: 312px;
+}
+.fblogo{
+    margin:3px 370px;
+    display:inline-block;
+}
+.fblogo img{
+    width:50px;
+	height:50px;
+    padding:5px;
+}
+/* footer */
+footer {
+       background: darkgray;
+       width: 100%;
+       overflow: hidden;
+       
+   }
+footer p, footer h3{
+       color: black;
+}
+/* Defining block section in the footer */
+.section{
+    width:100%;
+    border:1px solid darkgray;
+    float:left;
+    background-color:darkgray;
+    
+}
+.section #center{
+    margin:3px 310px;
+}
+
